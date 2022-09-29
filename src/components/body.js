@@ -1,8 +1,16 @@
+import Content from "./content";
+
 function Body(props){
     return(
         <div className="Body">
-            <h1>Body</h1>
-         
+            <Content/>
+            <Content/>
+            <Content/>
+            <Content/>
+            <Content/>
+            <Content/>
+            <Content/>
+            <Content/>
         </div>
     )
 }

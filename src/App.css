@@ -1,9 +1,7 @@
 .App {
   text-align: center;
 }
-div{
-  border: 1px solid black;
-}
+
 .Index{
  height: 100vh;
  display: flex;
@@ -17,11 +15,14 @@ div{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: black;
 }
 .Content{
   height: 40%;
   width: 400px;
   margin: auto;
+  background-color: white;
+  border-radius: 5px;
 }
 .Footer{
   height: 10%;

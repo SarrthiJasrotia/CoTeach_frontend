@@ -1,8 +1,11 @@
 function Content(props){
     return(
-        <div className="Content">
+        <a href='/show'className="Content" >
+            <div >
             <h1>Content</h1>
+            
         </div>
+        </a>
     )
 }
 

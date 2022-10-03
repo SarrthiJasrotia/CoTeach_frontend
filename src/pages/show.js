@@ -1,9 +1,11 @@
-function Show(props){
-    return(
+import Footer from "../components/footer";
+import ShowBody from "../components/showBody";
+function Show(props) {
+    return (
         <div className="Show">
-            SHOW
 
-           
+            <ShowBody />
+            <Footer />
         </div>
     )
 }

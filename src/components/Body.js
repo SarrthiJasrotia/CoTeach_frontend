@@ -1,9 +1,11 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
-import Index from "../pages/index";
-import Show from "../pages/show";
+import Index from "../pages/Index";
+import ShowBody from "../pages/showBody";
+import New from "../pages/New";
 
-function Body(props) {
+const Body = (props) => {
     //set state for content and setContent function
     const [content, setContent] = useState(null);
 
@@ -25,23 +27,32 @@ function Body(props) {
                 "Content-Type": "Application/json"
             },
             body: JSON.stringify(content)
-        });
+        })
         getContent();
     };
 
     //Initial render
-    useEffect(() => getContent(), []);
+    useEffect(() => {
+        getContent();
+    }, []);
 
     return (
         <main>
             <Switch>
                 <Route exact path="/">
-                    <Index />
+                    <Index
+                        content={content}
+                    />
+                </Route>
+                <Route path="/content/new">
+                    <New
+                        createContent={createContent}
+                    />
                 </Route>
                 <Route
                     path="/content/:id"
                     render={(rp) => (
-                        <Show
+                        <ShowBody
                             {...rp}
                         />
                     )}

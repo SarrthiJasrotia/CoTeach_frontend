@@ -2,29 +2,135 @@
   text-align: center;
 }
 
-.Index{
- height: 100vh;
- display: flex;
- flex-direction: column;
+.Index {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-.Header{
+.Header {
   height: 20%;
 }
-.Body{
+.Body {
   height: 70%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: black;
 }
-.Content{
+.ShowContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.ShowContent {
+  background-color: bisque;
+  width: 50%;
+}
+.ShowVideo {
+  background-color: blue;
+  width: 50%;
+}
+.ShowVideoPlayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  height: 60%;
+}
+.VideoPlayer {
+  height: 100%;
+  width: 100%;
+}
+.SuggestedContent {
+  height: 40%;
+  background-color: aquamarine;
+}
+
+.Content {
   height: 40%;
   width: 400px;
   margin: auto;
   background-color: white;
   border-radius: 5px;
-  margin: 3px;
 }
-.Footer{
+.Footer {
   height: 10%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+
+  word-break: break-all;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.bloc-tabs {
+  display: flex;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+.tabs:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs {
+  background: rgb(222, 78, 78);
+  border-bottom: 1px solid transparent;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: rgb(0, 0, 0);
+}
+
+button {
+  border: none;
+}
+.content-tabs {
+  flex-grow: 1;
+}
+.content {
+  background: rgb(222, 78, 78);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
 }

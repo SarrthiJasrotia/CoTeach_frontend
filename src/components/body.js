@@ -17,6 +17,21 @@ function Body(props) {
         setContent(data);
     }
 
+    // User can create content
+    const createContent = async (content) => {
+        await fetch(URL, {
+            method: "Post",
+            headers: {
+                "Content-Type": "Application/json"
+            },
+            body: JSON.stringify(content)
+        });
+        getContent();
+    };
+
+    //Initial render
+    useEffect(() => getContent(), []);
+
     return (
         <main>
             <Switch>

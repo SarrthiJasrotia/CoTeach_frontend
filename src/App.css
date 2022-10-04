@@ -2,24 +2,9 @@
   text-align: center;
 }
 
-.Index {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.Header {
-  display: flex;
-  justify-content: space-around;
-  height: 20%;
-}
-.Body {
-  height: 70%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: black;
-}
+
+
+
 .ShowContainer {
   display: flex;
   flex-direction: row;
@@ -48,13 +33,33 @@
   display: flex;
   width: 100%;
   height: 40%;
-  background-color: aquamarine;
+  background-color: rgb(255, 157, 0);
+  justify-content:space-around;
+}
+ .indexContainer{
+  display: flex;
+  height: auto;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(75, 35, 4);
+  
+} 
+.lesson1{
+  border-radius: 15px;
+  height: 30rem;
+  width: 30rem;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom:25px ;
+  background-color: rgb(0, 0, 0);
+  
+  
+ 
 }
 
-.lesson{
-  background-color: antiquewhite;
-  border: black 1px solid;
- 
+.lesson1:hover{
+  transform: scale(1.1);
 }
 
 .Content {
@@ -65,6 +70,7 @@
   border-radius: 5px;
 }
 .Footer {
+  
   height: 10%;
 }
 
@@ -113,4 +119,34 @@ button {
 
 .openContent {
   display: block;
+}
+
+.thumbnail{
+  width: 100%;
+  
+}
+.thumbTitle{
+  height: 15%;
+  color: white;
+  
+  /* background-color: aqua; */
+}
+.banner{
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  background-color: chocolate;
+}
+.bannerL{
+  height: 30rem;
+width: 50%;
+background-color: bisque;
+}
+.bannerR{
+  background-color: blueviolet;
+  width: 50%;
+}
+.nav{
+  height: 5rem;
+  background-color: chartreuse;
 }

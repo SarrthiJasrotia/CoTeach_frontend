@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 
 function Content(props) {
     return (
+        <div >
         <Link to={`/content/${props.id}`}>
-            <div >
-                <ReactPlayer light={true} url={props.videoURL} />
-            </div></Link>
-
+            
+                <ReactPlayer  width='100%'  light={true} url={props.videoURL} />
+            </Link>
+</div>
     )
 }
 

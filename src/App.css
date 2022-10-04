@@ -9,6 +9,8 @@
   text-align: center;
 }
 .Header {
+  display: flex;
+  justify-content: space-around;
   height: 20%;
 }
 .Body {

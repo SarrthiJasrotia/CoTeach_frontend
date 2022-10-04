@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Content from "../components/content";
 
 function Index(props) {
 
@@ -8,7 +9,8 @@ function Index(props) {
             <div key={lesson._id} className="lesson">
                 <Link to={`/content/${lesson._id}`}><h1>{lesson.title}</h1></Link>
                 <h3>{lesson.category}</h3>
-            </div>
+                <Content videoURL={lesson.videoURL} id={lesson._id} />
+            </div >
         ));
     };
 

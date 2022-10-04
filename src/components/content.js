@@ -1,11 +1,15 @@
-function Content(props){
-    return(
-        <a href='/show'className="Content" >
+import ReactPlayer from 'react-player';
+import React from 'react';
+import { Link } from "react-router-dom";
+
+
+function Content(props) {
+    return (
+        <Link to={`/content/${props.id}`}>
             <div >
-            <h1>Content</h1>
-            
-        </div>
-        </a>
+                <ReactPlayer light={true} url={props.videoURL} />
+            </div></Link>
+
     )
 }
 

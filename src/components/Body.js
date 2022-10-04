@@ -35,7 +35,7 @@ const Body = (props) => {
     useEffect(() => {
         getContent();
     }, []);
-
+    console.log(content)
     return (
         <main>
             <Switch>
@@ -53,6 +53,7 @@ const Body = (props) => {
                     path="/content/:id"
                     render={(rp) => (
                         <ShowBody
+                            content={content}
                             {...rp}
                         />
                     )}

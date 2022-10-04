@@ -13,11 +13,13 @@ function Tabs(props) {
 
       <div className='content-tabs'>
         <div className={toggleState === 1 ? 'content active-content' : 'content'}>
-          <h2>CONTENT</h2>
-          <p>Loremsdhsalkdj adiushdjashdoah ddsahdkjhas d oiahdkjash dapo dljkasd lasljdj
-            sdujolkasjdlkasjlkdjaslkjdkl adiushdjashdoahsj djaslkdjklajsdkljaskljdas dapod oksajhsdkl
-            djopsajdlkjaslkdsmlksamdl;askdlas'odksa;lkdl;sakdl;kas;ldaskljdjaslkdjlkasjlkdjaslkkjdkjasd.
-          </p>
+          <h2>{props.lesson.title}</h2>
+          <h2>{props.lesson.teacher}</h2>
+          <h2>{props.lesson.guidingQuestions}</h2>
+          <h2>{props.lesson.backgroundKnowledge}</h2>
+          <h2>{props.lesson.activities}</h2>
+          <h2>{props.lesson.lessonPlan}</h2>
+          <h2>{props.lesson.resources}</h2>
         </div>
 
 

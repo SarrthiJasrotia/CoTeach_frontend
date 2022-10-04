@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 function Index(props) {
@@ -13,6 +12,7 @@ function Index(props) {
         ));
     };
 
+    // loading function...no props.content yet
     const loading = () => {
         return <h1>Loading...</h1>;
     };

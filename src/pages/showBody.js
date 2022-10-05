@@ -1,7 +1,7 @@
 import VideoPlayer from "../components/VideoPlayer";
 import Tabs from "../components/Tabs";
 import SuggestContent from "../components/SuggestContent";
-
+import Popup from 'reactjs-popup'
 function ShowBody(props) {
 
     const id = props.match.params.id;
@@ -16,9 +16,16 @@ function ShowBody(props) {
             <div className="ShowVideo">
                 <div className="ShowVideoPlayer"><VideoPlayer url={lesson.videoURL} /></div>
                 <div className="SuggestedContent"><SuggestContent content={content} /></div>
-                <button id="delete" onClick={removeContent}>
-                    Delete Content
-                </button>
+               
+               
+                <Popup trigger={<button>DELETE</button>}position="top center" >
+                    <div className="deletePop">
+                    <span>Do you want to the delete this lesson?
+                       </span>
+                    <button id="delete" onClick={removeContent}>Delete Content</button>
+                </div>
+                </Popup>
+               
             </div>
             <div className="ShowContent"><Tabs lesson={lesson} /></div>
         </div>

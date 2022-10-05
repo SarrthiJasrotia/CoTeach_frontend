@@ -1,8 +1,7 @@
+
 .App {
   text-align: center;
 }
-
-
 
 
 .ShowContainer {
@@ -42,18 +41,20 @@
   align-items: start;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgb(75, 35, 4);
+  background-image: url(./chalkboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   
 } 
 .lesson1{
   border-radius: 15px;
-  height: 30rem;
-  width: 30rem;
+  height: 29rem;
+  width: 29rem;
   margin: auto;
   margin-top: 25px;
   margin-bottom:25px ;
   background-color: rgb(0, 0, 0);
-  
+  border: #f1f1f1 4px solid;
   
  
 }
@@ -70,8 +71,11 @@
   border-radius: 5px;
 }
 .Footer {
-  
-  height: 10%;
+  background-image: url(./wood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ height: 5rem;
+ margin-top: -20px;
 }
 
 .container {
@@ -128,7 +132,8 @@ button {
 .thumbTitle{
   height: 15%;
   color: white;
-  
+  font-family: 'Fredericka the Great', cursive;
+  /* font-family: 'Rubik Dirt', cursive; */
   /* background-color: aqua; */
 }
 .banner{
@@ -140,13 +145,37 @@ button {
 .bannerL{
   height: 30rem;
 width: 50%;
-background-color: bisque;
+background-image: url(./chalkboard.jpg);
+border-right: white 2.5px solid;
+background-repeat: no-repeat;
+  background-size: cover;
 }
 .bannerR{
-  background-color: blueviolet;
+  background-image: url(./chalkboard.jpg);
   width: 50%;
+  
+  border-left: white 2.5px solid;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .nav{
+  display: flex;
+  justify-content: space-around;
   height: 5rem;
-  background-color: chartreuse;
+  background-image: url(./wood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.nav a{
+  text-decoration: none;
+  font-size: 60px;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+}
+.Wood{
+  height: 5rem;
+  background-image: url(./wood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

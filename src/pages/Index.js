@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Content from "../components/content";
 import Banner from "../components/Banner";
+import Wood from "../components/Wood";
 
 function Index(props) {
 
@@ -24,6 +25,7 @@ function Index(props) {
     return (
         <>
         <Banner/>
+        <Wood/>
         <div className="indexContainer">
             {props.content ? loaded() : loading()}
         </div></>

@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Notes from './Notes';
+
 function Tabs(props) {
   const [toggleState, setToggleState] = useState(1)
   const toggleTab = (index) => {
@@ -25,11 +27,7 @@ function Tabs(props) {
 
         <div className={toggleState === 2 ? 'content openContent' : 'content'}>
           <h2>NOTES</h2>
-          <p>Lorslkdjklajsdkljaskljdas dapod oksajhsdk
-            lemsdhsalkdj adiushdjashdoah ddsahdkjhas d oiahdkjash dapo dljkasd lasljdj
-            sdujolkasjdlkasjlkdjaslkjdkl adiushdjashdoahsj dja
-            djopsajdlkjaslkdsmlksamdl;askdlas'odksa;lkdl;sakdl;kas;ldaskljdjaslkdjlkasjlkdjaslkkjdkjasd.
-          </p>
+          <Notes/>
         </div>
 
       </div>

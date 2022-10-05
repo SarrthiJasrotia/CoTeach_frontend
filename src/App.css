@@ -191,3 +191,25 @@ justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.NewBtn{
+  border-radius: 15px;
+  height: 29rem;
+  width: 29rem;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom:25px ;
+  background-image: url(./plus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  text-decoration: none;
+}
+
+.NewBtn:hover{
+
+  transform: scale(1.1);
+
+
+}

@@ -133,6 +133,7 @@ button {
   height: 15%;
   color: white;
   font-family: 'Fredericka the Great', cursive;
+  line-height: 30px;
   /* font-family: 'Rubik Dirt', cursive; */
   /* background-color: aqua; */
 }

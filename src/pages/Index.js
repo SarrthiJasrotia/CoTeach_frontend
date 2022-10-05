@@ -10,7 +10,7 @@ function Index(props) {
         return props.content.map((lesson) => (
             <div key={lesson._id} className="lesson1">
                 <Link to={`/content/${lesson._id}`} style={{textDecoration:"none"}}><div className="thumbTitle"><h1>{lesson.title}</h1>
-                <h3>{lesson.category}</h3></div>
+                <p>Category: {lesson.category}</p></div>
                 <div className="thumbnail">
                 <Content videoURL={lesson.videoURL} id={lesson._id} /></div></Link>
             </div >

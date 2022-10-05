@@ -11,6 +11,7 @@ function Tabs(props) {
       <div className='bloc-tabs'>
         <div className={toggleState === 1 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(1)}>  Content</div>
         <div className={toggleState === 2 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(2)}> Take Notes</div>
+        <div className={toggleState === 3 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(3)}> Show Notes</div>
       </div>
 
       <div className='content-tabs'>
@@ -30,6 +31,10 @@ function Tabs(props) {
           <Notes/>
         </div>
 
+        <div className={toggleState === 3 ? 'content openContent' : 'content'}>
+          <h2>Notes Taken</h2>
+          <h1>notes go here</h1>
+        </div>
       </div>
     </div>
   )

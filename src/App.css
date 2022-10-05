@@ -54,7 +54,7 @@
   margin-top: 25px;
   margin-bottom:25px ;
   background-color: rgb(0, 0, 0);
-  border: #f1f1f1 4px solid;
+  border: #949494 4px solid;
   
  
 }
@@ -143,24 +143,35 @@ button {
   background-color: chocolate;
 }
 .bannerL{
+  display: flex;
   height: 30rem;
 width: 50%;
 background-image: url(./chalkboard.jpg);
-border-right: white 2.5px solid;
+border-right:  #949494 2.5px solid;
 background-repeat: no-repeat;
   background-size: cover;
+align-items: center;
+justify-content: center;
+  font-size: 5rem;
+  color: white;
+  
+  font-family: 'Fredericka the Great', cursive;
+  flex-direction: column;
+  line-height: 2px;
+  
 }
 .bannerR{
   background-image: url(./chalkboard.jpg);
   width: 50%;
   
-  border-left: white 2.5px solid;
+  border-left: #949494 2.5px solid;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .nav{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 5rem;
   background-image: url(./wood.jpg);
   background-repeat: no-repeat;
@@ -169,7 +180,7 @@ background-repeat: no-repeat;
 }
 .nav a{
   text-decoration: none;
-  font-size: 60px;
+  font-size: 2rem;
   color: white;
   font-family: 'Fredericka the Great', cursive;
 }

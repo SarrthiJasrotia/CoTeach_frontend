@@ -4,7 +4,11 @@ import BoardSmile from './video/BoardSmile.mp4'
 export const Banner = () => {
   return (
     <div className='banner'>
-        <div className='bannerL'>Left</div>
+        <div className='bannerL'>
+            <p>WELCOME</p>
+            <p>TO</p>
+            <p>Co-Teach</p>
+            </div>
         <div className='bannerR'>
        
             

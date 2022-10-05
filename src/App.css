@@ -164,7 +164,7 @@ justify-content: center;
 .bannerR{
   background-image: url(./chalkboard.jpg);
   width: 50%;
-  
+  transform: scaleX(-1);
   border-left: #949494 2.5px solid;
   background-repeat: no-repeat;
   background-size: cover;

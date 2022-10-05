@@ -1,8 +1,8 @@
 function Footer(props){
     return(
         <div className="Footer">
-            <h1>Footer</h1>
             
+            <h1>footer</h1>
         </div>
     )
 }

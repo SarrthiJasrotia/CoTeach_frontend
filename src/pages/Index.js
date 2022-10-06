@@ -23,11 +23,6 @@ function Index(props) {
         ));
     };
 
-    // If a user isn't logged in, do not show the New Button to create content
-    const newBut = () => {
-        return <NewBtn />
-    }
-
     // loading function...no props.content yet
     const loading = () => {
         return <h1>Loading...</h1>;
@@ -39,7 +34,7 @@ function Index(props) {
             <Wood />
             <div className="indexContainer">
                 {props.content ? loaded() : loading()}
-                {props.user ? newBut() : ''}
+                {props.user ? <NewBtn /> : ''}
 
             </div></>
     );

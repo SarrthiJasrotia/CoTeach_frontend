@@ -36,7 +36,7 @@ function ShowBody(props) {
                 <div className="ShowVideoPlayer"><VideoPlayer url={lesson.videoURL} /></div>
                 <div className="SuggestedContent"><SuggestContent content={content} /></div>
             </div>
-            <div className="ShowContent"><Tabs lesson={lesson} /></div>
+            <div className="ShowContent"><Tabs lesson={lesson} user={props.user} /></div>
 
         </div>
     )

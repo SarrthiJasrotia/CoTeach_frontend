@@ -63,6 +63,7 @@ const Body = (props) => {
                     render={(rp) => (
                         <ShowBody
                             content={content}
+                            user={props.user}
                             deleteContent={deleteContent}
                             {...rp}
                         />

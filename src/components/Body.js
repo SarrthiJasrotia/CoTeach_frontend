@@ -43,13 +43,14 @@ const Body = (props) => {
     useEffect(() => {
         getContent();
     }, []);
-    console.log(content)
+
     return (
         <main>
             <Switch>
                 <Route exact path="/">
                     <Index
                         content={content}
+                        user={props.user}
                     />
                 </Route>
                 <Route path="/content/new">
@@ -62,6 +63,7 @@ const Body = (props) => {
                     render={(rp) => (
                         <ShowBody
                             content={content}
+                            user={props.user}
                             deleteContent={deleteContent}
                             {...rp}
                         />

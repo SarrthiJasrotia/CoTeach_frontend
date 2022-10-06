@@ -169,29 +169,63 @@ button {
 }
 .bannerL{
   display: flex;
+ 
   height: 30rem;
 width: 50%;
 background-image: url(./chalkboard.jpg);
-border-right:  #949494 2.5px solid;
+
 background-repeat: no-repeat;
   background-size: cover;
-align-items: center;
-justify-content: center;
+
   font-size: 5rem;
   color: white;
-  
   font-family: 'Fredericka the Great', cursive;
-  flex-direction: column;
   line-height: 2px;
   
 }
+.welcomeBoard{
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.icons{
+  /* background-color: antiquewhite; */
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .bannerR{
   background-image: url(./chalkboard.jpg);
   width: 50%;
   transform: scaleX(-1);
-  border-left: #949494 2.5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bannerPic img{
+  /* height: 50%; */
+  width: 50%;
+  border-radius: 10px;
+  border: #949494 1px solid;
+}
+.icons img{
+  width:130px;
+  /* border: 3px solid black; */
+  filter: invert(100%);
+  border: none;
+}
+.iconText{
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 15px;
+  
 }
 .nav{
   display: flex;

@@ -5,7 +5,6 @@ function Header(props){
         <div className="Header">
             
            
-             
              <Nav/>
            <Banner/>
         </div>

@@ -53,11 +53,14 @@ const Body = (props) => {
                         user={props.user}
                     />
                 </Route>
+                
                 <Route path="/content/new">
+               {props.user ?
                     <New
                         createContent={createContent}
-                    />
+                    />: <h1>You need to be logged in</h1>}
                 </Route>
+
                 <Route
                     path="/content/:id"
                     render={(rp) => (

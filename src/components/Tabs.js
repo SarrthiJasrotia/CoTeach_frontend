@@ -11,7 +11,8 @@ function Tabs(props) {
   // If user is logged in, allow the tabs to be clicked
   const notesTabsEnabled = () => {
     return (
-      <>
+      <> 
+        <div className={toggleState === 1 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(1)}>  <h1>Content</h1></div>
         <div className={toggleState === 2 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(2)}> <h1>Take Notes</h1></div>
         <div className={toggleState === 3 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(3)}> <h1>Show Notes</h1></div></>
     )
@@ -21,14 +22,18 @@ function Tabs(props) {
   const notesTabsDisabled = () => {
     return (
       <>
-        <div className='tabs' > <h1>Take Notes</h1></div>
-        <div className='tabs' > <h1>Show Notes</h1></div></>
+       <div className={toggleState === 1 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(1)}>  <h1>Content</h1></div>
+      <div className='tabDisable'><h1>Login to access Notes</h1></div>
+     </>
+      
     )
   }
+
+  ///////////////////////////////////////////////////////////////
   return (
     <div className="container">
       <div className='bloc-tabs'>
-        <div className={toggleState === 1 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(1)}>  <h1>Content</h1></div>
+       
         {(props.user) ? notesTabsEnabled() : notesTabsDisabled()}
       </div>
 

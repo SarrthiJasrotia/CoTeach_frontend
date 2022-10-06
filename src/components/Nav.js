@@ -6,33 +6,24 @@ const Nav = (props) => {
   // If the user is logged in, show the welcome [Name], Google avatar, and the logout button
   return (
     <div className='nav'>
-      <a href="/">HOME</a>
-      <a href="/content/new">New</a>
+      <a href="/"><h3>CoTeach</h3></a>
+      {props.user ? <a href="/content/new">New</a> : ''}
 
       {(!props.user) ?
         <>
           <div
-            onClick={login}
-            style={{
-              cursor: 'pointer',
-              marginRight: 10,
-              color: 'white'
-            }} >
-            Login
+            onClick={login}>
+            <p>Login</p>
           </div>
         </>
         :
         <>
-          <div style={{ marginRight: '10px', color: 'white' }}>Welcome, {props.user.displayName}</div>
-          <img src={props.user.photoURL} alt={props.user.name} style={{ height: '25px', marginRight: '10px' }} />
+          <div className='welcomeTag'> <img src={props.user.photoURL} alt={props.user.name} style={{ height: '55px', marginRight: '10px' }} /><p>Welcome, {props.user.displayName}</p></div>
+         
           <div
             onClick={logout}
-            style={{
-              cursor: 'pointer',
-              marginRight: 10,
-              color: 'white'
-            }} >
-            Logout
+            >
+            <p>Logout</p>
           </div>
         </>}
     </div >

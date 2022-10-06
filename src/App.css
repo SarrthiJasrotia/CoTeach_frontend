@@ -209,6 +209,14 @@ justify-content: center;
   color: white;
   font-family: 'Fredericka the Great', cursive;
 }
+.nav p{
+  font-size: 2rem;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+}
+.nav p:hover{
+  cursor: pointer;
+}
 .Wood{
   height: 5rem;
   background-image: url(./wood.jpg);
@@ -354,4 +362,30 @@ input:focus {
 #create-btn:hover {
   background-color: rgb(80, 222, 80);
   border-radius: 20px;
+}
+
+.tabDisable{
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.274); */
+    box-sizing: content-box;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Fredericka the Great', cursive;
+    color: black;
+  }
+  .tabDisable:hover{
+    background-color: rgb(255, 0, 0);
+  }
+
+  .welcomeTag{
+    display: flex;
+    
+     align-items: center;
+  }
+.welcomeTag img{
+ border-radius: 50px;
 }

@@ -51,18 +51,20 @@ function Notes() {
   return (
     <>
     <form onSubmit={handleSubmit}>
-        <textarea
+        <div className='textEditor'><textarea
         type="text"
-        value={newNote.notes}
+      
         name="notes"
         placeholder="Enter your notes here."
-        onChange={handleChange} >
+        onChange={handleChange} 
+        style={{height:'500px', width:'800px', fontSize:'30px'}}>
                 
 
-
+ 
         </textarea>
-      
-      <input type="submit" value="Create Note" />
+       
+      <input type="submit" value='Create Note' />
+      </div>
       </form>
     </>
   );

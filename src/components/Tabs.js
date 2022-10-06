@@ -1,42 +1,102 @@
-import { useState } from 'react'
+import { useState,useEffect,Link } from 'react'
 import Notes from './Notes';
 
+
 function Tabs(props) {
-  const [toggleState, setToggleState] = useState(1)
+
+  const [toggleState, setToggleState] = useState(1);
   const toggleTab = (index) => {
     setToggleState(index)
   }
+
+
+  ///////////////////////////////fetch notes 
+  const [newNote, setNewNote] = useState(
+   null
+  )
+
+  const notesURL = "http://localhost:4000/notes/"
+
+  // This function is used to get the data from the database. It will wait until it is completed and the set the state of the content with the returned data
+  const getNotes = async () => {
+    const response = await fetch(notesURL);
+    const data = await response.json();
+    setNewNote(data);
+    
+  }
+console.log( 'NewNote',newNote)
+  //Initial render
+  useEffect(() => {
+    getNotes();
+}, []);
+
+// loaded function
+const loaded = () => {
+  return newNote.map((note,index) => (
+    < div style={{textAlign:"left",fontSize:'20px',marginLeft:'5%'} }
+    >
+    <div key={index}></div>
+     <p><h3>Note #{index+1}</h3> {note.notes}</p></div>
+  ));
+};
+   // loading function...no props.content yet
+   const loading = () => {
+    return <h1>Loading...</h1>;
+};
+  // If user is logged in, allow the tabs to be clicked
+  const notesTabsEnabled = () => {
+    return (
+      <>
+        <div className={toggleState === 1 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(1)}>  <h1>Content</h1></div>
+        <div className={toggleState === 2 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(2)}> <h1>Take Notes</h1></div>
+        <div className={toggleState === 3 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(3)}> <h1>Show Notes</h1></div></>
+    )
+  }
+
+  // If no user logged in, disable clicking on the tabs
+  const notesTabsDisabled = () => {
+    return (
+      <>
+        <div className={toggleState === 1 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(1)}>  <h1>Content</h1></div>
+        <div className='tabDisable'><h1>Login to access Notes</h1></div>
+      </>
+
+    )
+  }
+
+  ///////////////////////////////////////////////////////////////
   return (
     <div className="container">
       <div className='bloc-tabs'>
-        <div className={toggleState === 1 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(1)}>  Content</div>
-        <div className={toggleState === 2 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(2)}> Take Notes</div>
-        <div className={toggleState === 3 ? 'tabs openTab' : 'tabs'} onClick={() => toggleTab(3)}> Show Notes</div>
+
+        {(props.user) ? notesTabsEnabled() : notesTabsDisabled()}
       </div>
 
       <div className='content-tabs'>
         <div className={toggleState === 1 ? 'content openContent' : 'content'}>
-          <h2>{props.lesson.title}</h2>
-          <h2>{props.lesson.teacher}</h2>
-          <h2>{props.lesson.guidingQuestions}</h2>
-          <h2>{props.lesson.backgroundKnowledge}</h2>
-          <h2>{props.lesson.activities}</h2>
-          <h2>{props.lesson.lessonPlan}</h2>
-          <h2>{props.lesson.resources}</h2>
+          <div className='lessonText'>
+            <h2>{props.lesson.title}</h2>
+            <p>{props.lesson.teacher}</p>
+            <p>{props.lesson.guidingQuestions}</p>
+            <p>{props.lesson.backgroundKnowledge}</p>
+            <p>{props.lesson.activities}</p>
+            <p>{props.lesson.lessonPlan}</p>
+            <p>{props.lesson.resources}</p>
+          </div>
         </div>
 
 
         <div className={toggleState === 2 ? 'content openContent' : 'content'}>
           <h2>NOTES</h2>
-          <Notes/>
+          <Notes />
         </div>
 
         <div className={toggleState === 3 ? 'content openContent' : 'content'}>
           <h2>Notes Taken</h2>
-          <h1>notes go here</h1>
+          {newNote ? loaded() : loading()}
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

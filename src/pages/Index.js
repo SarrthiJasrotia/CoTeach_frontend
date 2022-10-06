@@ -10,10 +10,15 @@ function Index(props) {
     const loaded = () => {
         return props.content.map((lesson) => (
             <div key={lesson._id} className="lesson1">
-                <Link to={`/content/${lesson._id}`} style={{textDecoration:"none"}}><div className="thumbTitle"><h1>{lesson.title}</h1>
-                <p>Category: {lesson.category}</p></div>
+                <Link to={`/content/${lesson._id}`} style={{ textDecoration: "none" }}>
+                    <div className="thumbTitle">
+                        <h1>{lesson.title}</h1>
+                        <p>Category: {lesson.category}</p>
+                    </div>
+                </Link>
                 <div className="thumbnail">
-                <Content videoURL={lesson.videoURL} id={lesson._id} /></div></Link>
+                    <Content videoURL={lesson.videoURL} id={lesson._id} />
+                </div>
             </div >
         ));
     };
@@ -25,12 +30,14 @@ function Index(props) {
 
     return (
         <>
-        <Banner/>
-        <Wood/>
-        <div className="indexContainer">
-            {props.content ? loaded() : loading()}
-            <NewBtn/>
-        </div></>
+            <Banner />
+            <Wood />
+            <div className="indexContainer">
+                {props.content ? loaded() : loading()}
+                {props.user ? <NewBtn /> : ''}
+
+            </div>
+        </>
     );
 }
 

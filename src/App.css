@@ -14,7 +14,7 @@
   width: 50%;
 }
 .ShowVideo {
-  background-color: blue;
+  /* background-color: blue; */
   width: 50%;
 }
 .ShowVideoPlayer {
@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
   background-color: brown;
-  height: 60%;
+  height: 50%;
 }
 .VideoPlayer {
   height: 100%;
@@ -32,13 +32,13 @@
   display: flex;
   width: 100%;
   height: 40%;
-  background-color: rgb(255, 157, 0);
+  /* background-color: rgb(255, 157, 0); */
   justify-content:space-around;
 }
  .indexContainer{
   display: flex;
   height: auto;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   background-image: url(./chalkboard.jpg);
@@ -75,22 +75,22 @@
   background-repeat: no-repeat;
   background-size: cover;
  height: 5rem;
- margin-top: -20px;
+ margin-top: -22px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
   height: 100%;
   background: #f1f1f1;
   word-break: break-all;
-  border: 1px solid rgba(0, 0, 0, 0.274);
+  
 }
 
 .bloc-tabs {
   display: flex;
+  
 }
 .tabs {
   padding: 15px;
@@ -98,33 +98,57 @@
   width: 50%;
   background: rgba(128, 128, 128, 0.075);
   cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.274); */
   box-sizing: content-box;
   position: relative;
-  outline: none;
+  font-size: 20px;
+  font-family: 'Fredericka the Great', cursive;
+  color: black;
 }
 .openTab {
-  background: rgb(222, 78, 78);
-  border-bottom: 1px solid transparent;
+  /* background: rgb(0, 0, 0); */
+  border: black 8px solid;
 }
 button {
   border: none;
 }
 .content-tabs {
   height: 100%;
+  background-image: url(./chalkboard.jpg);
+  border: black 2px solid;
+  
 }
 .content {
-  background: rgb(222, 78, 78);
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0,0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 20px; */
   width: 100%;
   height: 100%;
   display: none;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  
 }
-
+.content h2{
+  margin-top: 0;
+  padding-top: 20px;
+}
 .openContent {
   display: block;
+  text-align: center;
+  
 }
 
+.lessonText{
+  /* background-color: beige; */
+  width: 90%;
+  margin: auto;
+  font-size: 30px;
+  color: #ffffff;
+}
 .thumbnail{
   width: 100%;
   
@@ -141,7 +165,7 @@ button {
   display: flex;
   flex-direction: row;
   height: 80%;
-  background-color: chocolate;
+  /* background-color: chocolate; */
 }
 .bannerL{
   display: flex;
@@ -173,7 +197,7 @@ justify-content: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 5rem;
+  height: 7rem;
   background-image: url(./wood.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,6 +208,14 @@ justify-content: center;
   font-size: 2rem;
   color: white;
   font-family: 'Fredericka the Great', cursive;
+}
+.nav p{
+  font-size: 2rem;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+}
+.nav p:hover{
+  cursor: pointer;
 }
 .Wood{
   height: 5rem;
@@ -215,4 +247,145 @@ justify-content: center;
   width: 300px;
   height: 300px;
   background-color: aliceblue;
+}
+.textEditor{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #949494; */
+  height: 800px;
+}
+.textEditor input{
+  height: 50px;
+  width: 150px;
+  margin-top: 10px;
+  color: black;
+  font-family: 'Fredericka the Great', cursive;
+  background-color: white;
+  font-weight: 1000;
+  /* border: 4px rgb(255, 255, 255) solid; */
+  border-radius: 30px;
+  font-size: larger;
+}
+.textEditor input:hover{
+  transform: scale(1.1);
+  background-color: #949494;
+}
+
+/* NEW LESSON FORM BEGINS HERE */
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+legend {
+  padding: 0px 10px;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 500;
+  color:  black;
+}
+label {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 200;
+  color: black;
+  display: block;
+}
+
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+input:focus {
+  outline: 0;
+  border: 1px solid rgb(67, 160, 67);
+}
+
+.newtextarea {
+  width: 100%;
+  height: 100px;
+  max-width: 400px;
+  max-height: 150px;
+}
+
+.newtextarea:focus {
+  outline: 0;
+  border: 1px solid rgb(67, 160, 67);
+}
+
+.new-form-sidebar {
+  width: 50%;
+  background: url('https://www.withunderstandingcomescalm.com/wp-content/uploads/teacher-student-classroom-OPT-768x1152.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 0 0 10px;
+}
+
+.new-form-container {
+  font-family: 'Fredericka the Great', cursive;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #ddd,
+              -1px -1px 10px #ddd,
+              1px -1px 10px #ddd,
+              -1px 1px 10px #ddd;
+}
+
+.new-page-body {
+  background-image: url("./chalkboard.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+.lesson-creation {
+  width: 50%;
+  background: #f9f9f9;
+  border-radius: 0 10px 10px 0;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+#create-btn {
+  border-radius: 0px;
+}
+#create-btn:hover {
+  background-color: rgb(80, 222, 80);
+  border-radius: 20px;
+}
+
+.tabDisable{
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.274); */
+    box-sizing: content-box;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Fredericka the Great', cursive;
+    color: black;
+  }
+  .tabDisable:hover{
+    background-color: rgb(255, 0, 0);
+  }
+
+  .welcomeTag{
+    display: flex;
+    
+     align-items: center;
+  }
+.welcomeTag img{
+ border-radius: 50px;
 }

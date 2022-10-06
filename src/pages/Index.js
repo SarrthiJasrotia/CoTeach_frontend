@@ -15,10 +15,10 @@ function Index(props) {
                         <h1>{lesson.title}</h1>
                         <p>Category: {lesson.category}</p>
                     </div>
-                    <div className="thumbnail">
-                        <Content videoURL={lesson.videoURL} id={lesson._id} />
-                    </div>
                 </Link>
+                <div className="thumbnail">
+                    <Content videoURL={lesson.videoURL} id={lesson._id} />
+                </div>
             </div >
         ));
     };
@@ -36,7 +36,8 @@ function Index(props) {
                 {props.content ? loaded() : loading()}
                 {props.user ? <NewBtn /> : ''}
 
-            </div></>
+            </div>
+        </>
     );
 }
 

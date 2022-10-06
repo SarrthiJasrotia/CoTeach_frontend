@@ -23,12 +23,12 @@ export const Banner = () => {
               <img src={Icon1}/>
               <p className='iconText'>Develop your skills as an educator. </p>
               <img src={Icon2}/>
-              <p className='iconText'>Better resources = better results for your students. </p>
+              <p className='iconText'>All the content you need in one place. </p>
               </div>
               
               <div className='icons'>
               <img src={Icon3}/>
-              <p className='iconText'>All the content you need in one place.</p>
+              <p className='iconText'>Better resources = better results for your students.</p>
               <img src={Icon4}/>
               <p className='iconText'>Share your materials with others.</p>
            </div>

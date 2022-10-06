@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# CoTeach
+## A video platform for educators.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Website
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+CoTeach is a web application allowing teachers across the world access to video lessons and classroom resources. We believe that educators deserve to have a healthy work-life balance-- CoTeach saves teachers time, which ultimately benefits them and their students.
 
-### `npm start`
+Built using the MERN stack, CoTeach is a single-page application where all users can learn from a veteran mentor. Users who register with Google's Firebase oauth system can upload lessons and share their materials with other teachers in need.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+MongoDB | Mongoose |Express |  React | Node | CSS | JSX | JS | Firebase
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Users can view video lessons from many websites, using the React Player
+* Users can take notes while watching videos, and access educational materials to share with their students, all during video playback!
+* Users will be suggested related content to what they are viewing
+* Registered users can create content to share with others
+* Admin users can delete content if it does not meet the CoTeach standard
+* Users can register an account using Google Firebase
 
-### `npm run build`
+## Flowchart
+![Flowchart](https://trello.com/1/cards/6335dbce3b1365031780248c/attachments/6335dbd9f30ee90103ce0028/download/Screen_Shot_2022-09-29_at_1.52.00_PM.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Wireframe
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Wireframe](https://trello.com/1/cards/63348a54cf724200f2afe41f/attachments/63348e888e0cdb00f54dc77c/previews/63348e898e0cdb00f54dc7a6/download/Screen_Shot_2022-09-28_at_2.01.55_PM.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ERD
 
-### `npm run eject`
+![ERD](https://trello.com/1/cards/6334991e88e82c00177965f8/attachments/6334991e88e82c0017796615/previews/6334992088e82c0017796620/download/image.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment Link
+Backend: [Heroku]()<br>
+Frontend: [Netlify]()
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Pitch Deck
+[Google Slides](https://docs.google.com/presentation/d/1FqBJ50WID0DueOjYkdAukjcmBzwDhpFKdM2eyr74Cos/edit?usp=sharing)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## About the Team
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+We are a group of passionate developers looking to build platforms to ease the lives of our users. We enjoyed working with eachother for this one week sprint. Please support the team below!
 
-## Learn More
+Neil Saunders, Lead Backend [Neil's GitHub](https://github.com/npsaunders)<br>
+Sarrthi Jasrotia, Lead Frontend [Sarrthi's GitHub](https://github.com/SarrthiJasrotia)<br>
+Matt Porter, Product Manager [Matt's GitHub](https://github.com/mellisporter)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

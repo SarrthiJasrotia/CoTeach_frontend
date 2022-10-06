@@ -1,23 +1,9 @@
+
 .App {
   text-align: center;
 }
 
-.Index {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.Header {
-  height: 20%;
-}
-.Body {
-  height: 70%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: black;
-}
+
 .ShowContainer {
   display: flex;
   flex-direction: row;
@@ -28,7 +14,7 @@
   width: 50%;
 }
 .ShowVideo {
-  background-color: blue;
+  /* background-color: blue; */
   width: 50%;
 }
 .ShowVideoPlayer {
@@ -36,15 +22,45 @@
   justify-content: center;
   align-items: center;
   background-color: brown;
-  height: 60%;
+  height: 50%;
 }
 .VideoPlayer {
   height: 100%;
   width: 100%;
 }
 .SuggestedContent {
+  display: flex;
+  width: 100%;
   height: 40%;
-  background-color: aquamarine;
+  /* background-color: rgb(255, 157, 0); */
+  justify-content:space-around;
+}
+ .indexContainer{
+  display: flex;
+  height: auto;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(./chalkboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} 
+.lesson1{
+  border-radius: 15px;
+  height: 29rem;
+  width: 29rem;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom:25px ;
+  background-color: rgb(0, 0, 0);
+  border: #949494 4px solid;
+  
+ 
+}
+
+.lesson1:hover{
+  transform: scale(1.1);
 }
 
 .Content {
@@ -55,23 +71,26 @@
   border-radius: 5px;
 }
 .Footer {
-  height: 10%;
+  background-image: url(./wood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ height: 5rem;
+ margin-top: -22px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
   height: 100%;
   background: #f1f1f1;
-
   word-break: break-all;
-  border: 1px solid rgba(0, 0, 0, 0.274);
+  
 }
 
 .bloc-tabs {
   display: flex;
+  
 }
 .tabs {
   padding: 15px;
@@ -79,58 +98,170 @@
   width: 50%;
   background: rgba(128, 128, 128, 0.075);
   cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.274); */
   box-sizing: content-box;
   position: relative;
-  outline: none;
+  font-size: 20px;
+  font-family: 'Fredericka the Great', cursive;
+  color: black;
 }
-.tabs:not(:last-child) {
-  border-right: 1px solid rgba(0, 0, 0, 0.274);
+.openTab {
+  /* background: rgb(0, 0, 0); */
+  border: black 8px solid;
 }
-
-.active-tabs {
-  background: rgb(222, 78, 78);
-  border-bottom: 1px solid transparent;
-}
-
-.active-tabs::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% + 2px);
-  height: 5px;
-  background: rgb(0, 0, 0);
-}
-
 button {
   border: none;
 }
 .content-tabs {
-  flex-grow: 1;
+  height: 100%;
+  background-image: url(./chalkboard.jpg);
+  border: black 2px solid;
+  
 }
 .content {
-  background: rgb(222, 78, 78);
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0,0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 20px; */
   width: 100%;
   height: 100%;
   display: none;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  
 }
-.content h2 {
-  padding: 0px 0 5px 0px;
+.content h2{
+  margin-top: 0;
+  padding-top: 20px;
 }
-.content hr {
-  width: 100px;
-  height: 2px;
-  background: #222;
-  margin-bottom: 5px;
-}
-.content p {
-  width: 100%;
-  height: 100%;
-}
-.active-content {
+.openContent {
   display: block;
+  text-align: center;
+  
+}
+
+.lessonText{
+  /* background-color: beige; */
+  width: 90%;
+  margin: auto;
+  font-size: 30px;
+  color: #ffffff;
+}
+.thumbnail{
+  width: 100%;
+  
+}
+.thumbTitle{
+  height: 15%;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  line-height: 30px;
+  /* font-family: 'Rubik Dirt', cursive; */
+  /* background-color: aqua; */
+}
+.banner{
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  /* background-color: chocolate; */
+}
+.bannerL{
+  display: flex;
+  height: 30rem;
+width: 50%;
+background-image: url(./chalkboard.jpg);
+border-right:  #949494 2.5px solid;
+background-repeat: no-repeat;
+  background-size: cover;
+align-items: center;
+justify-content: center;
+  font-size: 5rem;
+  color: white;
+  
+  font-family: 'Fredericka the Great', cursive;
+  flex-direction: column;
+  line-height: 2px;
+  
+}
+.bannerR{
+  background-image: url(./chalkboard.jpg);
+  width: 50%;
+  transform: scaleX(-1);
+  border-left: #949494 2.5px solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7rem;
+  background-image: url(./wood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.nav a{
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+}
+.Wood{
+  height: 5rem;
+  background-image: url(./wood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.NewBtn{
+  border-radius: 15px;
+  height: 29rem;
+  width: 29rem;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom:25px ;
+  background-image: url(./plus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  text-decoration: none;
+}
+
+.NewBtn:hover{
+  transform: scale(1.1);
+}
+
+.deletePop{
+  width: 300px;
+  height: 300px;
+  background-color: aliceblue;
+}
+.textEditor{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #949494; */
+  height: 800px;
+}
+.textEditor input{
+  height: 50px;
+  width: 150px;
+  margin-top: 10px;
+  color: black;
+  font-family: 'Fredericka the Great', cursive;
+  background-color: white;
+  font-weight: 1000;
+  /* border: 4px rgb(255, 255, 255) solid; */
+  border-radius: 30px;
+  font-size: larger;
+}
+.textEditor input:hover{
+  transform: scale(1.1);
+  background-color: #949494;
 }

@@ -1,8 +1,13 @@
+import Banner from "./Banner";
+import Nav from "./Nav";
 function Header(props){
     return(
         <div className="Header">
-            <h1>Header</h1>
+            
            
+             
+             <Nav/>
+           <Banner/>
         </div>
     )
 }

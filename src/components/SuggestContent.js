@@ -13,17 +13,24 @@ function SuggestContent(props) {
 
   return (
     <>
-      <div key={props.content[rndNum]._id} className="lesson">
-        <Link to={`/content/${props.content[rndNum]._id}`}>
-          <h1>{props.content[rndNum].title}</h1></Link>
-        <h3>{props.content[rndNum].category}</h3>
-        <Content videoURL={props.content[rndNum].videoURL} id={props.content[rndNum]._id} />
+   
+
+
+      <div key={props.content[rndNum]._id} className="lesson1">
+        <Link to={`/content/${props.content[rndNum]._id}`}style={{textDecoration:"none"}}>
+        <div className="thumbTitle"><h1>{props.content[rndNum].title}</h1>
+        <h3>{props.content[rndNum].category}</h3> </div>
+        <div className="thumbnail">
+        <Content videoURL={props.content[rndNum].videoURL} id={props.content[rndNum]._id} /></div></Link>
       </div >
-      <div key={props.content[rndNum2]._id} className="lesson">
-        <Link to={`/content/${props.content[rndNum2]._id}`}>
-          <h1>{props.content[rndNum2].title}</h1></Link>
-        <h3>{props.content[rndNum2].category}</h3>
-        <Content videoURL={props.content[rndNum2].videoURL} id={props.content[rndNum2]._id} />
+
+
+      <div key={props.content[rndNum2]._id} className="lesson1">
+        <Link to={`/content/${props.content[rndNum2]._id}`}style={{textDecoration:"none"}}>
+        <div className="thumbTitle"><h1>{props.content[rndNum2].title}</h1>
+        <h3>{props.content[rndNum2].category}</h3> </div>
+        <div className="thumbnail">
+        <Content videoURL={props.content[rndNum2].videoURL} id={props.content[rndNum2]._id} /></div></Link>
       </div >
     </>
   );

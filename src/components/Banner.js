@@ -21,16 +21,16 @@ export const Banner = () => {
           
            <div className='icons'>
               <img src={Icon1}/>
-              <p className='iconText'>hjkfd ldjfla ljdajfl lajdfdasdasd </p>
+              <p className='iconText'>Develop your skills as an educator. </p>
               <img src={Icon2}/>
-              <p className='iconText'>hjkfd ldjfla ljdajfl lajdfsdasdas </p>
+              <p className='iconText'>Better resources = better results for your students. </p>
               </div>
               
               <div className='icons'>
               <img src={Icon3}/>
-              <p className='iconText'>hjkfd ldjfla ljdajfl lajdfasdasda </p>
+              <p className='iconText'>All the content you need in one place.</p>
               <img src={Icon4}/>
-              <p className='iconText'>hjkfd ldjfla ljdajfl lajdf asdadsa</p>
+              <p className='iconText'>Share your materials with others.</p>
            </div>
           
            

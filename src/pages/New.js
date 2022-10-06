@@ -57,7 +57,7 @@ function New(props) {
                     type="text"
                     value={newForm.title}
                     name="title"
-                    placeholder="title"
+                    placeholder="Name of your lesson."
                     onChange={handleChange} />
                     </label><br/>
                     <label for="teacher">
@@ -67,7 +67,7 @@ function New(props) {
                     type="text"
                     value={newForm.teacher}
                     name="teacher"
-                    placeholder="teacher"
+                    placeholder="Your name."
                     onChange={handleChange} />
                     </label><br/>
                     <label for="videoURL">
@@ -77,7 +77,7 @@ function New(props) {
                     type="text"
                     value={newForm.videoURL}
                     name="videoURL"
-                    placeholder="videoURL"
+                    placeholder="Link to your video lesson here."
                     onChange={handleChange} />
                     </label><br/>
                     <label for="category">
@@ -87,7 +87,7 @@ function New(props) {
                     type="text"
                     value={newForm.category}
                     name="category"
-                    placeholder="category"
+                    placeholder="Category name."
                     onChange={handleChange} />
                     </label><br/>
 
@@ -101,7 +101,7 @@ function New(props) {
                     type="text"
                     value={newForm.guidingQuestions}
                     name="guidingQuestions"
-                    placeholder="guidingQuestions"
+                    placeholder="What are some questions teachers should be asking the students?"
                     onChange={handleChange} />
                     </label><br/>
                     <label for="backgroundKnowledge">Background Knowledge:<br/>
@@ -111,7 +111,7 @@ function New(props) {
                     type="text"
                     value={newForm.backgroundKnowledge}
                     name="backgroundKnowledge"
-                    placeholder="backgroundKnowledge"
+                    placeholder="Describe some concepts that the instructor would need to know before teaching this material."
                     onChange={handleChange} />
                     </label><br/>
                     <label for="activities">
@@ -121,7 +121,7 @@ function New(props) {
                     type="text"
                     value={newForm.activities}
                     name="activities"
-                    placeholder="activities"
+                    placeholder="Place any activities you would use here."
                     onChange={handleChange} />
                     </label><br/>
                     <label for="lessonPlan">
@@ -132,7 +132,7 @@ function New(props) {
                     type="text"
                     value={newForm.lessonPlan}
                     name="lessonPlan"
-                    placeholder="lessonPlan"
+                    placeholder="Add a lesson plan. It is helpful for others to understand how you structured this lesson."
                     onChange={handleChange} />
                     </label><br/>
                     <label for="resources">
@@ -142,7 +142,7 @@ function New(props) {
                     type="text"
                     value={newForm.resources}
                     name="resources"
-                    placeholder="resources"
+                    placeholder="Add any links to resources here."
                     onChange={handleChange} />
                     </label><br/>
                     </fieldset>

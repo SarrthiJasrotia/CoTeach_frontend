@@ -299,9 +299,12 @@ input:focus {
   box-sizing: border-box;
   overflow: auto;
 }
-
+#create-btn {
+  border-radius: 0px;
+}
 #create-btn:hover {
-  background-color: green;
+  background-color: rgb(80, 222, 80);
+  border-radius: 20px;
 }
 
 

@@ -216,3 +216,92 @@ justify-content: center;
   height: 300px;
   background-color: aliceblue;
 }
+
+/* NEW LESSON FORM BEGINS HERE */
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+legend {
+  padding: 0px 10px;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 500;
+  color:  black;
+}
+label {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 200;
+  color: black;
+  display: block;
+}
+
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+input:focus {
+  outline: 0;
+  border: 1px solid rgb(67, 160, 67);
+}
+
+.newtextarea {
+  width: 100%;
+  height: 100px;
+  max-width: 400px;
+  max-height: 150px;
+}
+
+.newtextarea:focus {
+  outline: 0;
+  border: 1px solid rgb(67, 160, 67);
+}
+
+.new-form-sidebar {
+  width: 50%;
+  background: url('https://www.withunderstandingcomescalm.com/wp-content/uploads/teacher-student-classroom-OPT-768x1152.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 0 0 10px;
+}
+
+.new-form-container {
+  font-family: 'Fredericka the Great', cursive;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #ddd,
+              -1px -1px 10px #ddd,
+              1px -1px 10px #ddd,
+              -1px 1px 10px #ddd;
+}
+
+.new-page-body {
+  background-image: url("./chalkboard.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+.lesson-creation {
+  width: 50%;
+  background: #f9f9f9;
+  border-radius: 0 10px 10px 0;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#create-btn:hover {
+  background-color: green;
+}
+
+

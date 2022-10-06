@@ -43,13 +43,14 @@ const Body = (props) => {
     useEffect(() => {
         getContent();
     }, []);
-    console.log(content)
+
     return (
         <main>
             <Switch>
                 <Route exact path="/">
                     <Index
                         content={content}
+                        user={props.user}
                     />
                 </Route>
                 <Route path="/content/new">

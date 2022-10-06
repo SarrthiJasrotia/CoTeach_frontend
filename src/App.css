@@ -38,7 +38,7 @@
  .indexContainer{
   display: flex;
   height: auto;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   background-image: url(./chalkboard.jpg);

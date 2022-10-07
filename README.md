@@ -2,6 +2,7 @@
 ## A video platform for educators.
 
 ## The Website
+![Website](./images/CoTeach_Site.gif)
 
 ## Description
 
@@ -23,18 +24,19 @@ MongoDB | Mongoose |Express |  React | Node | CSS | JSX | JS | Firebase
 * Users can register an account using Google Firebase
 
 ## Flowchart
-![Flowchart](https://trello.com/1/cards/6335dbce3b1365031780248c/attachments/6335dbd9f30ee90103ce0028/download/Screen_Shot_2022-09-29_at_1.52.00_PM.png)
+![Flowchart](./images/Screen%20Shot%202022-09-29%20at%201.52.00%20PM.png)
 
 ## Wireframe
 
-![Wireframe](https://trello.com/1/cards/63348a54cf724200f2afe41f/attachments/63348e888e0cdb00f54dc77c/previews/63348e898e0cdb00f54dc7a6/download/Screen_Shot_2022-09-28_at_2.01.55_PM.png)
+![ShowWireframe](./images/Screen%20Shot%202022-09-28%20at%202.01.55%20PM.png)<br>
+![IndexWireframe](./images/Screen%20Shot%202022-09-28%20at%202.08.46%20PM.png)
 
 ## ERD
 
-![ERD](https://trello.com/1/cards/6334991e88e82c00177965f8/attachments/6334991e88e82c0017796615/previews/6334992088e82c0017796620/download/image.png)
+![ERD](./images/Screen%20Shot%202022-10-06%20at%208.41.17%20PM.png)
 
 ## Deployment Link
-Backend: [Heroku]()<br>
+Backend: [Heroku](https://coteach-production.herokuapp.com/)<br>
 Frontend: [Netlify]()
 
 ## Pitch Deck

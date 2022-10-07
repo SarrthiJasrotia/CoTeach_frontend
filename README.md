@@ -37,7 +37,7 @@ MongoDB | Mongoose |Express |  React | Node | CSS | JSX | JS | Firebase
 
 ## Deployment Link
 Backend: [Heroku](https://coteach-production.herokuapp.com/)<br>
-Frontend: [Netlify]()
+Frontend: [Netlify](https://vocal-figolla-43a5cd.netlify.app/)
 
 ## Pitch Deck
 [Google Slides](https://docs.google.com/presentation/d/1FqBJ50WID0DueOjYkdAukjcmBzwDhpFKdM2eyr74Cos/edit?usp=sharing)

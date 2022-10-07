@@ -2,7 +2,7 @@ function Footer(props){
     return(
         <div className="Footer">
             
-            <h1>footer</h1>
+           <p>Created by: Sarrthi Jasrotia, Neil Saunders, Matt Porter</p>
         </div>
     )
 }

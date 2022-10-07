@@ -76,12 +76,12 @@ const loaded = () => {
         <div className={toggleState === 1 ? 'content openContent' : 'content'}>
           <div className='lessonText'>
             <h2>{props.lesson.title}</h2>
-            <p>{props.lesson.teacher}</p>
-            <p>{props.lesson.guidingQuestions}</p>
-            <p>{props.lesson.backgroundKnowledge}</p>
-            <p>{props.lesson.activities}</p>
-            <p>{props.lesson.lessonPlan}</p>
-            <p>{props.lesson.resources}</p>
+            <p>Creator: {props.lesson.teacher}</p>
+            <p>Guiding Questions: {props.lesson.guidingQuestions}</p>
+            <p>Background Knowledge: {props.lesson.backgroundKnowledge}</p>
+            <p>Activities: {props.lesson.activities}</p>
+            <p>Lesson Plan: {props.lesson.lessonPlan}</p>
+            <a href={props.lesson.resources} style={{color:'white'}} target={'_blank'}>Resource Links: {props.lesson.resources}</a>
           </div>
         </div>
 

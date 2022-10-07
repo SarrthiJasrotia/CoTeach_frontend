@@ -23,7 +23,7 @@ function ShowBody(props) {
                 <div>
                     {(() => {
                         if (props.user) {
-                            if (props.user.email==='matthew.ellis.porter@gmail.com' ||'neilpsaunders@gmail.com'||'sarrthijasrotia05@gmail.com'){
+                            if (props.user.email==='sarrthijasrotia05@gmail.com'){
                                 return(
                                     <Popup trigger={<button>DELETE</button>} position="top center" >
                                     <div className="deletePop">

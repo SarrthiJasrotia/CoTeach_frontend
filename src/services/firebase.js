@@ -2,14 +2,14 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCjpaO9bqJnRtatUdHlQIuaBe0nAJyPNWc",
-  authDomain: "people-40c5a.firebaseapp.com",
-  projectId: "people-40c5a",
-  storageBucket: "people-40c5a.appspot.com",
-  messagingSenderId: "299746526574",
-  appId: "1:299746526574:web:56fe8293d70515e769ad7f"
+  apiKey: "AIzaSyCBwoOgGrGnr0k5XYqLuvxaFb5uBewwXOY",
+  authDomain: "coteachbackend.firebaseapp.com",
+  projectId: "coteachbackend",
+  storageBucket: "coteachbackend.appspot.com",
+  messagingSenderId: "138875847849",
+  appId: "1:138875847849:web:df3d127e6c8ce2bb17d5b8",
+  measurementId: "G-3MHW3CLMZX"
 };
-
 firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();

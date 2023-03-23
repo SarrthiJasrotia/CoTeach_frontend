@@ -15,7 +15,7 @@ function Tabs(props) {
    null
   )
 
-  const notesURL = "https://coteach-production.herokuapp.com/notes/"
+  const notesURL = "https://coteach-backend.herokuapp.com/notes/"
 
   // This function is used to get the data from the database. It will wait until it is completed and the set the state of the content with the returned data
   const getNotes = async () => {

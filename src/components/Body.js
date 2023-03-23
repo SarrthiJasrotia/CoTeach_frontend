@@ -10,7 +10,7 @@ const Body = (props) => {
     const [content, setContent] = useState(null);
 
     // **This is for local dev testing; switch to Heroku when done**
-    const URL = "https://coteach-production.herokuapp.com/content/";
+    const URL = "https://coteach-backend.herokuapp.com/content/";
 
     // This function is used to get the data from the database. It will wait until it is completed and the set the state of the content with the returned data
     const getContent = async () => {

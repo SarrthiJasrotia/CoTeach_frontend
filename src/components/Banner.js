@@ -19,6 +19,13 @@ export const Banner = () => {
           </div>
 
           
+        
+          
+           
+            </div>
+            
+        <div className='bannerR'>
+        {/* <div className='bannerPic'> <img src={BannerPic} alt="classroom img"/></div> */}
            <div className='icons'>
               <img src={Icon1}/>
               <p className='iconText'>Develop your skills as an educator. </p>
@@ -32,13 +39,6 @@ export const Banner = () => {
               <img src={Icon4}/>
               <p className='iconText'>Share your materials with others.</p>
            </div>
-          
-           
-            </div>
-            
-        <div className='bannerR'>
-        <div className='bannerPic'> <img src={BannerPic} alt="classroom img"/></div>
-        
            
        
           

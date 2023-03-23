@@ -198,17 +198,19 @@ background-repeat: no-repeat;
 }
 .welcomeBoard{
   /* background-color: aqua; */
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   width: 80%;
 }
 .icons{
-  /* background-color: antiquewhite; */
+  transform: scaleX(-1);
   width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 .bannerR{
@@ -239,7 +241,8 @@ background-repeat: no-repeat;
   font-family: 'Fredericka the Great', cursive;
   font-size: 15px;
   line-height: 15px;
-  
+  transform: scaleX(1);
+
 }
 .nav{
   display: flex;
